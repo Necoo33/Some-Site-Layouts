@@ -1,0 +1,124 @@
+/* Bir çok arızalar çıkdı. Bu tarz her tarafında tuş olan siteleri css grid ile yapmak lazım. */
+
+body{
+    background-color: #58e9f3;
+    box-sizing: border-box;
+    font-family: Arial;
+    max-width: 100%;
+}
+
+header h3{
+    display: inline-block;
+    position: relative;
+    font-size: 24pt;
+    left: 33%;
+}
+
+header img{
+    display: inline-block;
+    position: relative;
+    max-width: 40px;
+    max-height: 40px;
+    left: 54%;
+}
+
+.smlinks{
+    margin-left: 10px;
+}
+
+.bigpicture{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 15cm;
+}
+
+nav{
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+}
+
+nav .leftbuttons{
+    display: inline-block;
+    position: relative;
+    left: 30%;
+}
+
+.leftbuttons{
+    color: white;
+    text-decoration: none;
+    background-color: #3196f5;
+    padding: 15px 25px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.leftbuttons:hover{
+    background-color: blue;
+}
+
+nav .rightbuttons{
+    left: 195%;
+}
+
+.rightbuttons{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    background-color: #3196f5;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.rightbuttons:hover{
+    background-color: blue;
+}
+
+nav .sidebuttons{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.sidebuttons{
+    color: white;
+    text-decoration: none;
+    background-color: #3196f5;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.sidebuttons:hover{
+    background-color: blue;
+}
+
+main{
+    display: block;
+    position: relative;
+    text-align: justify;
+    max-width: 85%;
+    left: 12%;
+    margin-top: -20%;
+}
+
+article h2{
+    text-align: center;
+}
+
+footer{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    left: 18%;
+}
+
+footer p{
+    text-align: justify;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16pt;
+    left: 30%;
+}

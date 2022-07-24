@@ -1,0 +1,392 @@
+/* Bunun da tek eksiği hatıfî nev'inin yapılması. */
+
+body{
+    background: white;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.wholegridcontainer{
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: repeat(auto-fill, minmax(10, 10vw));
+    grid-template-rows: repeat(auto-fit, minmax(10, 100px))/*10, 100px*/;
+    margin: 0 auto;
+}
+
+.wholegridcontainer > div{
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+   /* border: 2px solid black;*/
+}
+
+.wholegridcontainer > div:nth-child(1){
+    grid-column: 1 / span 8;
+}
+
+div:nth-child(1) h1{
+    display: block;
+    font-size: 4vw;
+    padding: 0;
+    text-align: left;
+    margin-left: 2vw;
+}
+
+.wholegridcontainer > div:nth-child(2){
+    grid-column: 9 / span 1;
+}
+
+div:nth-child(2) p{
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.icons{
+    max-width: 7vw;
+    max-height: 7vh;
+}
+
+.icons:hover{
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+.wholegridcontainer > div:nth-child(3){
+    grid-column: 1 / span 9;
+    grid-row: 2 / span 3;
+}
+
+div:nth-child(3) h2{
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+div:nth-child(3) img{
+    width: 100%;
+    margin: 0;
+}
+
+.wholegridcontainer > div:nth-child(4){
+    grid-column: 1 / span 1;
+}
+
+div:nth-child(4) input{
+    width: 11vw;
+}
+
+.wholegridcontainer > div:nth-child(5){
+    grid-column: span 8;
+}
+
+.upperbuttonsdiv{
+    display: flex;
+    place-content: space-around;
+}
+
+.upperbuttons{
+    position: relative;
+    padding: 10px 4vw;
+    font-family: Arial;
+    background-color: aquamarine;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.upperbuttons:hover{
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+.wholegridcontainer > div:nth-child(6){
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 3;
+}
+
+.leftbuttonsdiv{
+    margin-top: 15px;
+}
+
+.leftbuttons{
+    display: block;
+    font-family: Arial;
+    padding: 10px;
+    background-color: aquamarine;
+    margin-bottom: 4px;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.leftbuttons:hover{
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+.wholegridcontainer > div:nth-child(7){
+    grid-column: span 7;
+    grid-row: span 3;
+}
+
+div:nth-child(7) main{
+}
+
+div:nth-child(7) p{
+    text-align: justify;
+}
+
+.wholegridcontainer > div:nth-child(8){
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row: span 3;
+    padding: 3px;
+}
+
+div:nth-child(8) form{
+    margin-top: 10vh;
+    display: block;
+}
+
+div:nth-child(8) form input{
+    width: 8vw;
+    border-radius: 20px;
+    margin-bottom: 4px;
+}
+
+div:nth-child(8) form label{
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.signinsection a{
+    text-decoration: underline;
+    color: black;
+}
+
+input[type*="submit"]:hover{
+ /* Bu pseudo sınıfı bütün submit girdi nev'lerine tesir ediyor. */
+    opacity: 80%;
+} 
+
+div:nth-child(8) p a:hover{
+    opacity: 80%;
+}
+
+.wholegridcontainer > div:nth-child(9){
+    grid-column: span 9;
+    grid-row: span 3;
+}
+
+div:nth-child(9){
+    border-top: 1px black solid;
+}
+
+.linksdiv{
+    display: flex;
+    flex-direction: column;
+    place-content: space-between;
+}
+
+.linksdiv div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link{
+    margin: 2vw 4.5vw;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+    opacity: 80%;
+}
+
+.wholegridcontainer > div:nth-child(10){
+    grid-column: span 9;
+}
+
+div:nth-child(10){
+    border-top: 1px solid black;
+}
+
+div:nth-child(10) footer p{
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 2600px){
+    div:nth-child(3) h2{
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 2250px){
+    div:nth-child(3) h2{
+        top: 45%;
+    }
+}
+
+@media screen and (max-width: 1850px){
+    .icons{
+        max-width: 6vw;
+        max-height: 6vh;
+    }
+
+    div:nth-child(3) h2{
+        top: 46%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .icons{
+        max-width: 5vw;
+        max-height: 5vh;
+    }
+
+    div:nth-child(3) h2{
+        top: 35%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .icons{
+        max-width: 4vw;
+        max-height: 4vh;
+    }
+
+
+    div:nth-child(3) h2{
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    div:nth-child(3) h2{
+        top: 20%;
+    }
+}
+
+/**/
+/**/
+/**/
+/* Hatıfî Ekranların ayarları */
+
+@media screen and (max-width: 700px){
+    .wholegridcontainer > div:nth-child(1){
+        grid-column: 1 / span 9;
+    }
+    
+    div:nth-child(1) h1{
+        display: block;
+        font-size: 4vw;
+        padding: 0;
+        text-align: center;
+        margin-left: 4vw;
+    }
+
+    div:nth-child(2){
+        display: none;
+    }
+
+    .wholegridcontainer > div:nth-child(3){
+        grid-column: 1 / span 9;
+        grid-row: 2 / span 2;
+    }
+
+    div:nth-child(3) h2{
+        top: 28%;
+        left: 28%;
+        font-size: 2vw;
+    }
+
+    div:nth-child(3) img{
+        width: 100%;
+        margin: 0;
+    }
+
+    div:nth-child(4){
+        display: none;
+    }
+
+    .wholegridcontainer > div:nth-child(5){
+        grid-column: span 9;
+    }
+
+    .upperbuttonsdiv{
+        place-content: space-between;
+    }
+
+    .upperbuttons{
+        padding: 1.75vh 3.5vw;
+        font-size: 3vw;
+    }
+
+    div:nth-child(6){
+        display: none;
+    }
+
+    div:nth-child(7){
+        grid-column: span 9;
+    }
+
+    div:nth-child(7){
+        width: 110%;
+    }
+
+    div:nth-child(7) main{
+
+    }
+
+    div:nth-child(8){
+        display: none;
+    }
+
+    div:nth-child(9){
+        grid-column: span 9;
+    }
+
+    div:nth-child(10) footer p{
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width: 510px){
+    div:nth-child(3) h2{
+        top: 25%;
+        left: 30%;
+        font-size: 2vw;
+    }
+
+    .upperbuttons{
+        padding: 4px 2.5vw;
+
+    }
+}
+
+@media screen and (max-width: 430px){
+    div:nth-child(3) h2{
+        top: 22%;
+        left: 35%;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 340px){
+    div:nth-child(3) h2{
+        top: 20%;
+        left: 40%;
+        font-size: 2vw;
+    }
+}

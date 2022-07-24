@@ -1,0 +1,969 @@
+/* Bayağı zorladı ama Allaha şükür birşeylere
+benzedi. 1920x1080 ekrana kadar destekliyor.
+bir responsive web site layihalaşdırırken
+320 pixellik vüs'atden başlamak lazımmış,
+diğer türlü herşey çorba oluyor.
+
+gene de daha mükemmelleşdirmeye çalış.
+
+Muhtemelen netninja da "mobile-first responsive
+build" dersinde aynı şeyi anlatacak.*/
+
+body{
+    background-color: white;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+header h3{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-style: italic;
+    font-size: 30pt;
+}
+
+header h3::selection{
+    background-color: #60beca;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: 14cm;
+}
+
+nav{
+    white-space: nowrap;
+}
+
+nav .upperbuttons{
+    display: inline-block;
+    width: 10%;
+}
+
+.upperbuttons{
+    text-decoration: none;
+    padding: 15px 8px;
+    background-color: #60beca;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.upperbuttons:hover{
+    background-color: #27a2e9;
+    text-decoration: underline;
+}
+
+nav .sidebuttons{
+    display: inline-block;
+    width: 10%;
+}
+
+.sidebuttons{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 15px 8px;
+    margin-bottom: 6px;
+    background-color: #60beca;
+    border-radius: 10px;
+    color: white;
+    font-size: 20pt;
+}
+
+.sidebuttons:hover{
+    background-color: #27a2e9;
+    text-decoration: underline;
+}
+
+main{
+    position: relative;
+    display: inline-block;
+    max-width: 85%;
+    text-align: justify;
+    left: 13%;
+    margin-top: -22%;
+    font-size: 24pt;
+    color: black;
+}
+
+p::selection{
+    background-color: #60beca;
+    color: white;
+}
+
+article h2{
+    position: relative;
+    display: inline-block;
+    font-size: 48pt;
+    left: 35%;
+}
+
+article h2::selection{
+    background-color: #60beca;
+    color: white;
+}
+
+footer{
+    display: inline-block;
+    position: relative;
+    left: 18%;
+    font-weight: bold;
+    font-style: italic;
+    border: 3px solid #60beca;
+    border-radius: 20px;
+    font-size: 24pt;
+}
+
+@media screen and (min-width: 0px){
+    header h3{
+        display: inline-block;
+        position: relative;
+        font-size: 8pt;
+        left: 25%;
+    }
+
+    img{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 5cm;
+    }
+
+    nav .upperbuttons{
+        width: 4.5%;
+    }
+
+    .upperbuttons{
+        font-size: 2pt;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: -10%;
+    }
+
+    .sidebuttons{
+        padding: 4px 2px;
+        font-size: 4pt;
+        margin-bottom: 1px;
+        top: -30%;
+    }
+
+    main{
+        left: 16%;
+        margin-top: -45%;
+        font-size: 4pt;
+    }
+
+    article h2{
+        font-size: 8pt;
+        left: 30%;
+        margin-bottom: 0%;
+    }
+
+    article p{
+        width: 90%;
+    } 
+
+    footer{
+        font-size: 4pt;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 319px){
+    header h3{
+        display: inline-block;
+        position: relative;
+        font-size: 10pt;
+        left: 45%;
+    }
+
+    img{
+        display: inline-block;
+        position: relative;
+        width: 135%;
+        height: 5cm;
+    }
+
+    nav .upperbuttons{
+        width: 11.2%;
+    }
+
+    .upperbuttons{
+        font-size: 4pt;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    .sidebuttons{
+        padding: 9px 8px;
+        font-size: 4pt;
+        margin-bottom: 5px;
+        margin-top: -6%;
+    }
+
+    main{
+        left: 18%;
+        margin-top: -55%;
+        font-size: 7pt;
+    }
+
+    article h2{
+        font-size: 14pt;
+        left: 42%;
+        margin-bottom: 0%;
+    }
+
+    article p{
+        width: 135%;
+    } 
+
+    footer{
+        font-size: 7pt;
+        text-align: center;
+        left: 25%;
+    }
+}
+
+@media screen and (min-width: 374px){
+
+    header h3{
+        display: inline-block;
+        position: relative;
+        font-size: 11pt;
+        left: 45%;
+    }
+
+    img{
+        display: inline-block;
+        position: relative;
+        width: 132%;
+        height: 5cm;
+    }
+
+    nav .upperbuttons{
+        width: 11.2%;
+    }
+
+    .upperbuttons{
+        font-size: 4pt;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    .sidebuttons{
+        padding: 9px 12px;
+        font-size: 4pt;
+        margin-bottom: 5px;
+        margin-top: -6%;
+    }
+
+    main{
+        left: 18%;
+        margin-top: -48%;
+        font-size: 7pt;
+    }
+
+    article h2{
+        font-size: 14pt;
+        left: 42%;
+        margin-bottom: 0%;
+    }
+
+    article p{
+        width: 130%;
+    } 
+
+    footer{
+        font-size: 9pt;
+        text-align: center;
+        left: 22%;
+    }
+}
+
+@media screen and (min-width: 424px){
+    header h3{
+        font-size: 8pt;
+        left: 35%;
+    }
+
+    img{
+        width: 100%;
+    }
+    
+    nav .upperbuttons{
+        width: 6.3%;
+    }
+
+    .upperbuttons{
+        font-size: 3pt;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        text-align: center;
+    }
+
+    .sidebuttons{
+        padding: 6px 1.8px;
+        font-size: 4pt;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -42%;
+        font-size: 4pt;
+    }
+
+    article h2{
+        font-size: 8pt;
+        left: 38%;
+        margin-bottom: 0%;
+    }
+
+    article p{
+        width: 97%;
+    } 
+
+    footer{
+        font-size: 5pt;
+        text-align: center;
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 459px){
+    header h3{
+        font-size: 8pt;
+        left: 35%;
+    }
+
+    img{
+        width: 100%;
+    }
+    
+    nav .upperbuttons{
+        width: 6.3%;
+    }
+
+    .upperbuttons{
+        font-size: 3pt;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        text-align: center;
+    }
+
+    .sidebuttons{
+        padding: 6px 1.8px;
+        font-size: 4pt;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -38%;
+        font-size: 4pt;
+    }
+
+    article h2{
+        font-size: 8pt;
+        left: 38%;
+        margin-bottom: 0%;
+    }
+
+    article p{
+        width: 97%;
+    } 
+
+    footer{
+        font-size: 6pt;
+        text-align: center;
+        left: 15%;
+    }
+}
+
+@media screen and (min-width: 598px){
+    header h3{
+        font-size: 8pt;
+        left: 40%;
+    }
+
+    img{
+        width: 100%;
+    }
+    
+    nav .upperbuttons{
+        width: 7.5%;
+    }
+
+    .upperbuttons{
+        font-size: 3pt;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        text-align: center;
+    }
+
+    .sidebuttons{
+        padding: 6px 1.8px;
+        font-size: 4pt;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -42%;
+        font-size: 4pt;
+    }
+
+    article h2{
+        font-size: 12pt;
+        left: 38%;
+        margin-bottom: 0%;
+    }
+
+    article p{
+        width: 97%;
+    } 
+
+    footer{
+        font-size: 8pt;
+        text-align: center;
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 767px){
+    header h3{
+        font-size: 18pt;
+        left: 30%;
+    }
+
+    nav .upperbuttons{
+        width: 8.5%;
+    }
+
+    .upperbuttons{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 8pt;
+    }
+
+    .sidebuttons{
+        padding: 7px 3.5px;
+        font-size: 8pt;
+        margin-bottom: 8px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -25%;
+        font-size: 13pt;
+    }
+
+    article h2{
+        font-size: 24pt;
+        left: 33%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 11pt;
+        text-align: center;
+        left: 18%;
+    }
+}
+
+@media screen and (min-width: 918px){
+    header h3{
+        font-size: 24pt;
+    }
+
+    img{
+        height: 14cm;
+    }
+
+    nav .upperbuttons{
+        width: 8.9%;
+    }
+
+    .upperbuttons{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 10pt;
+    }
+
+    .sidebuttons{
+        font-size: 10pt;
+        padding: 10px 9px;
+        margin-bottom: 11px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -27%;
+        font-size: 12pt;
+    }
+
+    article h2{
+        font-size: 24pt;
+        left: 33%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 12pt;
+        left: 17%;
+    }
+}
+
+@media screen and (min-width: 1035px){
+    header h3{
+        font-size: 24pt;
+    }
+
+    img{
+        height: 24cm;
+    }
+
+    nav .upperbuttons{
+        width: 9.1%;
+    }
+
+    .upperbuttons{
+        padding-top: 7px;
+        padding-bottom: 8px;
+        font-size: 11pt;
+    }
+
+    .sidebuttons{
+        font-size: 11pt;
+        padding: 7px 5px;
+        margin-top: 14px;
+        margin-bottom: -6px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -22.5%;
+        font-size: 12pt;
+    }
+
+    article h2{
+        font-size: 24pt;
+        left: 36%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 14pt;
+        left: 15%;
+    }
+}
+
+@media screen and (min-width: 1240px){
+    header h3{
+        font-size: 24pt;
+    }
+
+    img{
+        height: 24cm;
+    }
+
+    nav .upperbuttons{
+        width: 9.4%;
+    }
+
+    .upperbuttons{
+        padding-top: 6px;
+        padding-bottom: 8px;
+        font-size: 11pt;
+    }
+
+    .sidebuttons{
+        font-size: 11pt;
+        padding: 7px 5px;
+        margin-top: 14px;
+        margin-bottom: -6px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -20%;
+        font-size: 12pt;
+    }
+
+    article h2{
+        font-size: 24pt;
+        left: 36%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 16pt;
+        left: 15%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    header h3{
+        font-size: 24pt;
+        left: 33%;
+    }
+
+    img{
+        height: 24cm;
+    }
+
+    nav .upperbuttons{
+        width: 9.7%;
+        margin-top: 2px;
+    }
+
+    .upperbuttons{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 12pt;
+    }
+
+    .sidebuttons{
+        font-size: 11pt;
+        padding: 10px 7px;
+        margin-top: 14px;
+        margin-bottom: -6px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -21%;
+        font-size: 14pt;
+    }
+
+    article h2{
+        font-size: 32pt;
+        left: 36%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 20pt;
+        left: 17%;
+    }
+}
+
+@media screen and (min-width: 1550px){
+    header h3{
+        font-size: 24pt;
+    }
+
+    img{
+        height: 24cm;
+    }
+
+    nav .upperbuttons{
+        width: 9.8%;
+    }
+
+    .upperbuttons{
+        padding-top: 11px;
+        padding-bottom: 11px;
+        font-size: 11pt;
+    }
+
+    .sidebuttons{
+        font-size: 11pt;
+        padding: 11px 9px;
+        margin-top: 14px;
+        margin-bottom: -6px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -19%;
+        font-size: 16pt;
+    }
+
+    article h2{
+        font-size: 36pt;
+        left: 36%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 16pt;
+        left: 25%;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    header h3{
+        font-size: 24pt;
+        left: 38%;
+    }
+
+    img{
+        height: 24cm;
+    }
+
+    nav .upperbuttons{
+        width: 10%;
+    }
+
+    .upperbuttons{
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+        font-size: 12pt;
+    }
+
+    .sidebuttons{
+        font-size: 12pt;
+        padding: 12.5px 10px;
+        margin-top: 14px;
+        margin-bottom: -6px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -19%;
+        font-size: 17pt;
+    }
+
+    article h2{
+        font-size: 40pt;
+        left: 38%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 20pt;
+        left: 22%;
+    }
+}
+
+@media screen and (min-width: 1955px){
+    header h3{
+        font-size: 30pt;
+        left: 38%;
+    }
+
+    img{
+        height: 24cm;
+    }
+
+    nav .upperbuttons{
+        width: 10%;
+    }
+
+    .upperbuttons{
+        padding-top: 17px;
+        padding-bottom: 17px;
+        font-size: 17pt;
+    }
+
+    .sidebuttons{
+        font-size: 17pt;
+        padding: 17px 10px;
+        margin-top: 14px;
+        margin-bottom: -6px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -21%;
+        font-size: 17pt;
+    }
+
+    article h2{
+        font-size: 40pt;
+        left: 38%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 20pt;
+        left: 27%;
+    }
+}
+
+@media screen and (min-width: 2250px){
+    header h3{
+        font-size: 32pt;
+        left: 38%;
+    }
+
+    img{
+        height: 24cm;
+    }
+
+    nav .upperbuttons{
+        width: 10.2%;
+    }
+
+    .upperbuttons{
+        padding-top: 17px;
+        padding-bottom: 17px;
+        font-size: 18pt;
+    }
+
+    .sidebuttons{
+        font-size: 18pt;
+        padding: 17px 10px;
+        margin-top: 14px;
+        margin-bottom: -6px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -18%;
+        font-size: 17pt;
+    }
+
+    article h2{
+        font-size: 48pt;
+        left: 38%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 26pt;
+        left: 22%;
+    }
+}
+
+@media screen and (min-width: 2620px){
+    header h3{
+        font-size: 36pt;
+        left: 38%;
+    }
+
+    img{
+        height: 24cm;
+    }
+
+    nav .upperbuttons{
+        width: 10.33%;
+    }
+
+    .upperbuttons{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 18pt;
+    }
+
+    .sidebuttons{
+        font-size: 18pt;
+        padding: 21px 10px;
+        margin-top: 14px;
+        margin-bottom: -6px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -19%;
+        font-size: 17pt;
+    }
+
+    article h2{
+        font-size: 48pt;
+        left: 38%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 28pt;
+        left: 23%;
+    }
+}
+
+@media screen and (min-width: 2900px){
+    header h3{
+        font-size: 40pt;
+        left: 38%;
+    }
+
+    img{
+        height: 24cm;
+    }
+
+    nav .upperbuttons{
+        width: 10.33%;
+    }
+
+    .upperbuttons{
+        padding-top: 22px;
+        padding-bottom: 22px;
+        font-size: 21pt;
+    }
+
+    .sidebuttons{
+        font-size: 21pt;
+        padding: 23px 10px;
+        margin-top: 14px;
+        margin-bottom: -6px;
+    }
+
+    main{
+        left: 13%;
+        margin-top: -18.7%;
+        font-size: 17pt;
+    }
+
+    article h2{
+        font-size: 48pt;
+        left: 38%;
+        margin-bottom: 2%;
+    }
+
+    article p{
+        width: 100%;
+    } 
+
+    footer{
+        font-size: 32pt;
+        left: 24%;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Layout 5.css">
+    <title>Layout 5</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo">
+            Layout 5
+        </h1>
+
+        <div class="buttons">
+            <div class="dropdowncontainer upperbuttons">
+                <button class="ddmenu"><a href="#" style="color: white; text-decoration: none;">ddmenu</a></button>
+                <div class="ddlist">
+                    <button class="link" ><a href="#" style="color: white; text-decoration: none;">button1</a></button>
+                    <button class="link" ><a href="#" style="color: white; text-decoration: none;">button2</a></button>
+                    <button class="link" ><a href="#" style="color: white; text-decoration: none;">button3</a></button>
+                    <button class="link" ><a href="#" style="color: white; text-decoration: none;">button4</a></button>
+                    <button class="link" ><a href="#" style="color: white; text-decoration: none;">button5</a></button>
+                </div>
+            </div>
+            <button class="upperbuttons"><a href="#">upperb1</a></button>
+            <button class="upperbuttons"><a href="#">upperb2</a></button>
+            <button class="upperbuttons"><a href="#">upperb3</a></button>
+            <button class="upperbuttons"><a href="#">upperb4</a></button>
+        </div>
+    </div>
+
+        <hr>
+
+    <div>
+        <img src="Bright Mountains And Dark Valley With Cloudscape by Jacob Lund Photography from NounProject.com.jpg" alt="">
+    </div>
+
+        <hr>
+
+    <main>
+        <article>
+            <h2>Headline</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie eu mi sed tempus. Praesent semper, diam id laoreet cursus, risus lectus eleifend ante, id egestas arcu est nec metus. Maecenas felis neque, lacinia id iaculis id, accumsan non orci. Nam enim magna, volutpat vitae risus et, mattis convallis ipsum. Pellentesque molestie massa vel ex dignissim viverra. Curabitur porta interdum quam pharetra venenatis. Proin enim quam, varius sed posuere in, aliquam et eros. Donec quis libero auctor, lacinia lacus id, laoreet eros. Ut nec lectus sapien. In hac habitasse platea dictumst. Pellentesque consequat sagittis mauris at consectetur. Vivamus rhoncus placerat tristique. Donec pellentesque risus purus, at egestas nulla consectetur ac. Morbi aliquet, ipsum sit amet convallis imperdiet, metus mi faucibus diam, eget finibus lacus dolor a odio. Phasellus fringilla, lorem quis feugiat interdum, nibh leo placerat sem, in laoreet purus erat eget dolor.</p>
+
+            <p>Ut sit amet libero sit amet arcu venenatis sodales at ut tellus. Vivamus justo elit, bibendum ac commodo at, pharetra ut odio. Nulla facilisi. Duis ac molestie ex. Proin dignissim libero ipsum, vitae laoreet nisl tristique a. Aliquam hendrerit scelerisque velit, eget aliquet nulla convallis sed. Nunc nec fermentum nisl. Cras in imperdiet sem. Fusce imperdiet eget arcu non placerat. Phasellus ligula enim, volutpat ut pulvinar eget, efficitur non justo. Praesent iaculis nulla fermentum augue accumsan, id tincidunt ex bibendum.</p>
+
+            <p>Nam urna nisi, mattis in consectetur nec, imperdiet sit amet libero. Nullam sit amet elit non odio efficitur semper. Ut nisi nisl, tincidunt ut tincidunt ut, semper a urna. Cras malesuada congue porta. Nam commodo vehicula ex et consequat. Nulla rutrum ligula eget tortor facilisis, nec fringilla urna commodo. Ut sapien purus, lobortis eget porta molestie, molestie quis nunc.</p>
+        </article>
+    </main>
+        <hr>
+    <section>
+        <div class="outlinks">
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+        </div>
+
+        <div class="outlinks">
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+        </div>
+
+        <div class="outlinks">
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+        </div>
+
+        <div class="outlinks">
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+        </div>
+    </section>
+        <hr>
+    <footer>
+        <p>
+            This Layout Coded By Necdet Arda Etiman In 2022.
+        </p>
+    </footer>
+    <script>
+        let ddmenu = document.querySelector(".ddmenu");
+        let ddlist = document.querySelector(".ddlist");
+        let body = document.querySelector("body");
+
+       ddmenu.addEventListener("mouseenter", () => {
+            ddlist.classList.toggle("openinglist");
+        }); 
+
+        ddlist.addEventListener("mouseleave", () => {
+            ddlist.classList.remove("openinglist");
+        });
+
+        body.addEventListener("click", () => {
+            ddlist.classList.remove("openinglist");
+        });
+    </script>
+</body>
+</html>

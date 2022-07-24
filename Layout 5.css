@@ -1,0 +1,162 @@
+body{
+    margin: 0 auto;
+    font-family: Arial;
+    background-color: gray;
+}
+
+.upperbuttons > a{
+    color: white;
+    text-decoration: none;
+}
+
+div .ddmenu{
+    color: white;
+    text-decoration: none;
+}
+
+.header{
+    background-color: gray;
+    color: white;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    color: black;
+    margin-left: 2vw;
+}
+
+.logo::selection{
+    background-color: black;
+    color: white;
+}
+
+.buttons{
+    margin-right: 1vw;
+}
+
+.upperbuttons{
+    padding: 2vh 2vw;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.upperbuttons:hover{
+    transform: scale(1.05);
+}
+
+/* Dropdown Menu Codes Start */
+
+.dropdowncontainer{
+    position: relative;
+    padding: inherit;
+}
+
+.ddmenu{
+    position: relative;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+
+.ddmenu:hover{
+    transform: scale(1.05);
+}
+
+.ddmenu, .link{
+    padding: 2vh 2vw;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.ddlist{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.openinglist{
+    transform: scaleY(1);
+}
+
+.link{
+    background-color: black;
+    color: white;
+}
+
+.link:hover{
+    transform: scale(1.05);
+}
+
+/* Dropdown Menu Codes End */
+
+img{
+    width: 100%;
+    height: 500px;
+}
+
+main{
+    margin: 20px 70px;
+    color: black;
+}
+
+main article{
+    width: 100%;
+}
+
+main article h2{
+    text-align: center;
+}
+
+main article p{
+    text-align: justify;
+}
+
+main article p:first-of-type::first-letter{
+    font-size:4vw;
+    font-weight: bold;
+    float: left;
+    margin-top: -0.3vw;
+    margin-right: 0.5vw;
+    margin-bottom: -1vw;
+
+}
+
+section{
+    display: block;
+
+}
+
+section .outlinks{
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 2vw;
+
+}
+
+section a{
+    color: black;
+    text-decoration: none;
+}
+
+section a:hover{
+    transform: scale(1.2);
+}
+
+footer p{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+}

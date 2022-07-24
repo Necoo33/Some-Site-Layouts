@@ -1,0 +1,432 @@
+/* Bir tek bu site'nin mobil nev'inin yapılması kaldı, onu da hallet. */
+
+body{
+    font-family: Arial;
+    max-width: 1500px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bold;
+    margin-left: 1vw;
+}
+
+.upperbuttons{
+    margin-right: 1em;
+    position: relative;
+}
+
+.upperbuttons > button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.buttons, .ddbuttons{
+    padding: 2vh 1.5vw;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.ddbuttons{
+    display: block;
+    margin-top: 0.3vh;
+}
+
+.ddbuttons > a{
+    color: white;
+}
+
+.buttons:hover{
+    transform: scale(1.05);
+}
+
+.ddbuttons:hover{
+    transform: scale(1.05);
+}
+
+.ddlist{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.ddlist > button a{
+    text-decoration: none;
+}
+
+
+.ddlistopening{
+    transform: scaleY(1);
+}
+
+.gridcontainer{
+    display: grid;
+    max-width: inherit;
+    grid-template-columns: 8, 1fr;
+    grid-template-rows: 10, 200px;
+}
+
+.gridcontainer > .main-image{
+    grid-column: 1 / span 7;
+    grid-row: span 3;
+    background-color: #f0eeee;
+}
+
+.taskpicture{
+    width: 20vw;
+    height: 20vh;
+}
+
+.main-image-content{
+    display: flex;
+    place-content: space-around;
+    flex-direction: row;
+}
+
+.images{
+    margin-top: 2vh;
+    margin-left: 20vw;
+}
+
+.images > img{
+    margin-bottom: 3vh;
+}
+
+.quotes{
+    font-size: 2em;
+    letter-spacing: 0.2vw;
+    line-height: 17vh;
+    margin-left: -10vw;
+}
+
+.gridcontainer > .leftbuttonsdiv{
+    grid-column: 1 / span 2;
+    grid-row: span 3;
+}
+
+.leftbuttonsdiv > div{
+    margin-top: 5vh;
+    margin-left: 1vw;
+}
+
+.leftbuttons{
+    padding: 2vh 2.3vw;
+    margin-top: 2vh;
+    background-color: black;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.leftbuttons a{
+    text-decoration: none;
+    color: white;
+}
+
+.leftbuttons:hover{
+    transform: scale(1.05);
+}
+
+.ddlistthree{
+    position: relative;
+    top: 89.5%;
+    margin-top: 0.3vh;
+    z-index: 1000;
+}
+
+.ddbuttonsthree{
+    padding: 2vh 2.3vw;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    transition: 0.3s;
+    display: block;
+    /*margin-bottom: 0.3vh;*/
+    position: relative;
+    left: 100%;
+    top: 100%;
+    margin-top: 0.3vh;
+}
+
+.ddbuttonsthree > a{
+    color: white;
+    text-decoration: none;
+}
+
+.ddbuttonsthree:hover{
+    transform: scale(1.05);
+}
+
+.ddlistthree{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.ddlistopeningthree{
+    transform: scaleY(1);
+}
+
+.gridcontainer > .upperbuttonsdivtwo{
+    grid-column: 3 / span 3;
+    display: flex;
+    place-content: space-around;
+}
+
+.upperbuttonsdivtwo div{
+    align-items: center;
+}
+
+.upperbuttonstwo{
+    margin-top: 2vh;
+    position: relative;
+    padding: 2vh 3.3vw;
+    border: none;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.upperbuttonstwo > a{
+    text-decoration: none;
+    color: white;
+}
+
+.upperbuttonstwo:hover{
+    transform: scale(1.05);
+}
+
+.ddlisttwo{
+    margin-top: 0.3vh;
+}
+
+.ddbuttonstwo{
+    padding: 2vh 3.3vw;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    transition: 0.3s;
+    display: block;
+    margin-bottom: 0.3vh;
+    margin-top: 0.3vh;
+}
+
+.ddbuttonstwo > a{
+    color: white;
+    text-decoration: none;
+}
+
+.ddbuttonstwo:hover{
+    transform: scale(1.05);
+}
+
+.ddlisttwo{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.ddlistopeningtwo{
+    transform: scaleY(1);
+}
+
+.gridcontainer > .rightbuttonsdiv{
+    grid-column: 6 / span 2;
+    grid-row: span 3;
+}
+
+.rightbuttonsdiv > div{
+    margin-top: 5vh;
+    /*margin-right: 1vw;*/
+}
+
+.rightbuttons{
+    padding: 2vh 2.3vw;
+    margin-top: 2vh;
+    background-color: black;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.rightbuttons a{
+    text-decoration: none;
+    color: white;
+}
+
+.rightbuttons:hover{
+    transform: scale(1.05);
+}
+
+.gridcontainer > .texts{
+    grid-column: 3 / span 3;
+    grid-row: 5 / span 4;
+}
+
+.texts > main{
+    margin: 2em;
+    
+}
+
+main article h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+main article p{
+    text-align: justify;
+    font-size: 1em;
+}
+
+main article p:first-of-type::first-letter{
+    font-size: 4em;
+    float:left;
+    margin-right: 3px;
+    margin-bottom: -2px;
+    margin-top: -5px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1100px){
+
+    .quotes{
+
+        line-height: 19vh;
+        margin-left: -8vw;
+    }
+
+    .upperbuttonstwo{
+        padding: 2vh 2.5vw;
+    }
+}
+
+@media screen and (max-width: 960px){
+
+    .quotes{
+        font-size: 1.5em;
+        line-height: 20vh;
+        margin-left: -5vw;
+    }
+
+    .upperbuttonstwo{
+        padding: 2vh 2vw;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .upperbuttonstwo{
+        padding: 2vh 1.2vw;
+    }
+
+    .leftbuttons{
+        margin-top: 1.2vh;
+    }
+
+    .rightbuttons{
+        margin-top: 1.2vh;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .upperbuttonstwo{
+        padding: 1.5vh 0.9vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .main-image-content{
+        flex-direction: column;
+    }
+
+    .taskpicture{
+        width: 15vw;
+        height: 15vh;
+    }
+
+    .images{
+        margin: 2vh auto;
+    }
+
+    .images > br{
+        display: none;
+    }
+
+    .quotes{
+        margin-top: -6vh;
+        font-size: 1.5em;
+        line-height: 1vh;
+        text-align: center;
+    }
+
+    .leftbuttonsdiv{
+        display: none;
+    }
+
+    .rightbuttonsdiv{
+        display: none;
+    }
+
+    footer{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .buttons, .ddbuttons{
+        padding: 1.4vh 0.7vw;
+        font-size: 0.7em;
+    }
+
+    .upperbuttonstwo{
+        padding: 1.5vh 0.5vw;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .buttons, .ddbuttons{
+        padding: 1.4vh 0.7vw;
+        font-size: 0.7em;
+    }
+
+    .taskpicture{
+        width: 15vw;
+        height: 10vh;
+    }
+
+    .quotes{
+        line-height: 2vh;
+    }
+
+    .upperbuttonstwo{
+        padding: 1vh 0.7vw;
+        font-size: 0.5em;
+    }
+
+    footer{
+        font-size: 0.5em;
+    }
+}
